@@ -11,7 +11,7 @@ public class ConversorTemperaturas {
     float tempF, tempR;
     
     public float centigradosAFharenheit(float tempC)throws TemperaturaErradaExcepcion{
-        if(tempC>temp){
+        if(tempC<temp){
             throw new TemperaturaErradaExcepcion("La temperatura para pasar a Fharenheit no puede ser superior a 80º");
         }
         else{
@@ -20,7 +20,7 @@ public class ConversorTemperaturas {
         }
     }
     public void centigradosAReamur(float tempC)throws TemperaturaErradaExcepcion{
-        if(tempC>temp){
+        if(tempC<temp){
             throw new TemperaturaErradaExcepcion("La temperatura para pasar a Reamur no puede ser superior a 80º");
         }
         else{
